@@ -47,7 +47,7 @@
                     </div>
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="feature_image">Feature Image</label>
+                            <label for="feature_image">Выбирите фото</label>
                             <input class="form-control" type="text" id="feature_image" name="image" value="" readonly>
                             <a href="" class="popup_selector" data-inputid="feature_image">Select Image</a>
                         </div>

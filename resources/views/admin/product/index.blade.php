@@ -61,7 +61,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <img src="{{$product->image}}" alt="" style="display: block; width: 120px">
+                                        <img src="\{{$product->image}}" alt="" style="display: block; width: 120px">
                                     </div>
                                 </td>
                                 <td>

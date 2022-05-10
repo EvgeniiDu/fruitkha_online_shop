@@ -62,6 +62,12 @@
                             </select>
                         </div>
                     </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Цена</label>
+                            <input type="text" class="form-control" name="price" id="exampleInputEmail1" placeholder="Введите цену" required>
+                        </div>
+                    </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Добавить</button>

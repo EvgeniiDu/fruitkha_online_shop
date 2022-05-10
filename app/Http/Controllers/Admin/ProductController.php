@@ -92,7 +92,7 @@ class ProductController extends Controller
         $product->title = $request->title;
         $product->slug = $request->slug;
         $product->description = $request->description;
-        $product->image = $request->image;
+        $product->image == $request->image??$product->image ="\\".$request->image ;
         $product->category_id = $request->category_id;
         $product->price = $request->price;
         $product->save();

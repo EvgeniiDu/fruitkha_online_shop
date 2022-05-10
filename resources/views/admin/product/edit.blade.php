@@ -56,13 +56,16 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label>Категория</label>
-                            <select value="{{$product['category_id']}}" name="category_id" class="form-control">
+                            <select name="category_id" class="form-control">
                                 @foreach($categories as $category)
-                                    <option value="{{$category['id']}}" >{{$category->title}}</option>
+                                    @if($category->id == $product->category_id)
+                                        <option value="{{$category['id']}}" selected>{{$category->title}}</option>
+                                        @continue
+                                    @endif
+                                        <option value="{{$category['id']}}">{{$category->title}}</option>
                                 @endforeach
                             </select>
                         </div>
-                        <div>{{$product['category_id']}}</div>
                     </div>
                     <div class="card-body">
                         <div class="form-group">
